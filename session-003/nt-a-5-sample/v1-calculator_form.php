@@ -10,7 +10,7 @@
 </head>
 <body>
   <h2>Calculator Form</h2>
-  <form method="POST" action="./calculator.php">
+  <form method="POST" action="./v1-calculator.php">
     <p>Calculate the sum or product of a given number range.</p>
     <div class="input-wrapper">
       <label for="first_number">First Number: </label>

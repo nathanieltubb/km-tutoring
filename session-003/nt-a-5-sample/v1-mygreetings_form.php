@@ -10,7 +10,7 @@
 </head>
 <body>
   <h2>My Greetings Form</h2>
-  <form method="POST" action="./show_characters.php">
+  <form method="POST" action="./v1-show_characters.php">
     <p>Enter a greeting and show the characters.</p>
     <div class="input-wrapper">
       <label for="greeting">Greeting: </label>
