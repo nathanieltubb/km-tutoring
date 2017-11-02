@@ -58,6 +58,9 @@ session_start();
     <li><a href="./form-handler.php">Form Handler</a></li>
     <li><a href="./another-page.php">Another Page</a></li>
   </ul>
+  <ul>
+    <li><a href="./cookies.php">Cookies!</a></li>
+  </ul>
 
   <strong>Ending Values</strong><br>
   <hr>
