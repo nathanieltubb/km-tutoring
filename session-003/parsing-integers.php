@@ -13,13 +13,13 @@
 // var_dump($value);
 // var_dump(intval($value));
 
-// $value = ";laksdjf;l 13"+0;
-// var_dump($value);
-// var_dump(intval($value));
+$value = ";laksdjf;l 13"+0;
+var_dump($value);
+var_dump(intval($value));
 
-$value = ";laksdjf;l 13";
-var_dump(is_numeric($value));
-$value = "13.3";
-var_dump(is_numeric($value));
-$value = "12";
-var_dump(is_numeric($value));
+// $value = ";laksdjf;l 13";
+// var_dump(is_numeric($value));
+// $value = "13.3";
+// var_dump(is_numeric($value));
+// $value = "12";
+// var_dump(is_numeric($value));

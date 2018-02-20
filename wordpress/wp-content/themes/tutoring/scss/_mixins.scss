@@ -1,0 +1,59 @@
+//---------------------------------------------------------------
+// Fonts
+@mixin helvetica {
+  font-family: "HelveticaNeueLight", "HelveticaNeue-Light", "Helvetica Neue Light", "HelveticaNeue", "Helvetica Neue", 'TeXGyreHerosRegular', "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+}
+//---------------------------------------------------------------
+// Alignment Helpers
+@mixin vcenter {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+@mixin xycenter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+@mixin clear {
+  display: inline-block;
+  width: 100%;
+}
+//---------------------------------------------------------------
+// Hover State Helper
+@mixin hover {
+  &:hover, &:active, &:focus {
+    @content;
+  }
+}
+//---------------------------------------------------------------
+// Media Query Helpers
+@mixin respond($sizes...) {
+  @each $size in $sizes {
+    @include respond-to(#{$size}) { @content; }
+  }
+}
+
+@mixin respond-to($media) {
+  @if $media == small_only {
+    @media screen and (max-width: 39.9375em) {@content}
+  }
+  @else if $media == medium_only {
+    @media screen and (min-width: 40em) and (max-width: 63.9375em) {@content}
+  }
+  @else if $media == medium_up {
+    @media screen and (min-width: 40em) {@content}
+  }
+  @else if $media == large_only {
+    @media screen and (min-width: 64em) and (max-width: 74.9375em) {@content}
+  }
+  @else if $media == large_up {
+    @media screen and (min-width: 64em) {@content}
+  }
+}

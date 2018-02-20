@@ -1,0 +1,22 @@
+.no-stock {
+    color: lightcoral;
+}
+.available {
+    color: lightgreen;
+}
+.no-fee {
+    background-color: lightgreen;
+}
+.has-fee {
+    background-color: lightcoral;
+}
+td img {
+    display: block;
+    margin: 0 auto;
+    width: 60px;
+    height: auto;
+}
+table {
+    width: 100%;
+}
+.text-right { text-align: right; }
